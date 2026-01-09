@@ -58,3 +58,146 @@
 .nav-btn .btn:hover {
     background: #256628;
 }
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.diamond-icon {
+    width: 24px;
+    height: 24px;
+    background: #2563eb;
+    transform: rotate(45deg);
+}
+
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    background-image: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?width=1600px&h=674px');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 80px;
+}
+
+.badge {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #475569;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.badge::before {
+    content: "🎯";
+    font-size: 14px;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 900px;
+}
+
+.hero-heading {
+    font-size: 56px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.hero-subheading {
+    font-size: 56px;
+    font-weight: 700;
+    color: #4ade80;
+    line-height: 1.2;
+    margin-bottom: 30px;
+}
+
+.hero-description {
+    color: #e2e8f0;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: 14px 28px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #10b981;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.arrow {
+    font-size: 18px;
+}
+
+.play-icon {
+    font-size: 16px;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 30px 40px;
+}
+
+.feature-list li {
+    padding: 8px 0;
+    color: #475569;
+    font-size: 15px;
+}
+
+.feature-list li::before {
+    content: "•";
+    color: #2563eb;
+    font-weight: bold;
+    margin-right: 10px;
+}
